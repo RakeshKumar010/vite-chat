@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.chatmain{
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.438);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.chatcontaner{
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: space-between;
+  align-items: center;
+  background-color: yellow;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: 0px 0px 38px white;
+  border: 1px inset;
+}
+.chatheader{
+  height: 5vh;
+  width: 100%;
+  border-radius: 10px 10px 0 0; 
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+  background-color: gray;
+  color: white;
+  
+}
+.chatbody{
+  overflow: hidden auto;
+  width: 100%;
+  height: 40vh;
+  box-shadow: 0px 0px 5px black inset;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 10px;
+}
+.innermessageconntainer{
+  min-height: 100%;
+  /* float:; */
+  width: 15vw;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.infomessageconntainer{
+  min-height: 100%;
+  /* float: right; */
+  width: 15vw;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.outermessageconntainer{
+    min-height: 100%;
+    /* float: left; */
+    width: 15vw;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.chatbody .innermessage{
+  /* position: absolute;
+    right: 13px; */
+    /* bottom: 10px; */
+    float: right;
+    background-color: greenyellow;
+    padding: 5px 2rem;
+    border-radius: 10px 0 10px 10px
+}
+.chatbody .outermessage{
+  /* position: absolute;
+    left: 13px; */
+    /* top: 10px; */
+    float: left;
+    background-color: grey;
+    padding: 5px;
+    border-radius:0 10px  10px 10px
+}
+.chatbody .infomessage{
+   /* float: left; */
+   text-align: center;
+    background-color: grey;
+    padding: 5px;
+    /* border-radius:0 10px  10px 10px */
+}
+.chatfooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  border-radius: 0 0 10px 10px;
+  background-color: gray;
+  /* padding: 0 5px; */
+  
+  
+}
+.chatfooter button{
+  padding: 5px;
+  border-radius: 0 0 10px 0;
+  border: 0;
+  width: 8%;
+  /* background-color:; */
+}
+.chatfooter input{
+  width: 92%;
+  border-radius: 0 0 0 10px;
+
+  padding: 5px;
+}
